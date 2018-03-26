@@ -1,0 +1,8 @@
+{
+  "name": "pollutionmonitor",
+  "app_id": "f7a3b877",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
