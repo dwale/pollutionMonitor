@@ -3,17 +3,20 @@ import { NavController } from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import { LoadingController } from 'ionic-angular';
-import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
+  aqi:any;
   constructor(public loader: LoadingController, public navCtrl: NavController, public http: HttpClient, ) {
     this.http = http;
     this.loader = loader;
-    this.aqi = { data: {} };
+    this.aqi = {
+      data: {}
+    };
     this.reload();
   }
   reload() {
