@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Http } from '@angular/http';
 import 'rxjs/add/operator/toPromise';
 import { LoadingController } from 'ionic-angular';
 import {HttpClient} from "@angular/common/http";
@@ -34,7 +33,7 @@ export class HomePage {
       })
       .catch(error => {
         loading.dismiss();
-        console.log(error.json())
+        // console.log(error.json())
         let eloading = this.loader.create({
           content: 'Connectivity Issue!',
           duration: 5000
@@ -43,7 +42,7 @@ export class HomePage {
       });
   }
   aqiStatus(val) {
-
+console.log("hhhfkjfskjfk", this.aqi);
     if (val <= 50) {
       return { code: 'good', val: 'Good' };
     } else if (val <= 100) {
