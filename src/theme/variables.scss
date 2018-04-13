@@ -12,7 +12,7 @@ $font-path: "../assets/fonts";
 $app-direction: ltr;
 
 
-@import "ionic.globals";
+@import 'ionic.globals';
 
 
 // Shared Variables
@@ -38,9 +38,11 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  back: #fefefe
 );
 
+$toolbar-background: color($colors, primary);
 
 // App iOS Variables
 // --------------------------------------------------
