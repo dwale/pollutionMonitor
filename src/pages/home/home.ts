@@ -42,7 +42,7 @@ export class HomePage {
       });
   }
   aqiStatus(val) {
-console.log("hhhfkjfskjfk", this.aqi);
+console.log("Data from server", this.aqi);
     if (val <= 50) {
       return { code: 'good', val: 'Good' };
     } else if (val <= 100) {

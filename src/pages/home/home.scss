@@ -29,12 +29,12 @@ page-home {
     letter-spacing: 4px;
     font-weight: 600;
     padding-top: 10px;
+    line-height: 120px;
+    letter-spacing: 4px;
   }
 
   .pollution-value {
     font-size: 120px;
-    line-height: 120px;
-    letter-spacing: 4px;
   }
   @media (max-width: 355px) {
     .pollution-value {
